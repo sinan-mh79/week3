@@ -10,7 +10,6 @@ password = getpass.getpass("Enter password (hidden): ")
 ssh = paramiko.SSHClient()
 
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-
 try:
     
     ssh.connect(
